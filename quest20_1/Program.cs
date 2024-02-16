@@ -1,15 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections;
 
 namespace quest20_1
 {
-    internal class Program
+    class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            ArrayList arrayList = new ArrayList();
+            arrayList.Add((int)1);
+            arrayList.Add((int)2);
+            arrayList.Add((int)3);
+            arrayList.Add((string)"string");
+            arrayList.Add((int)5);
+
+            for (int i = 0; i < arrayList.Count; i++) 
+            {
+                Console.WriteLine(arrayList[i]);
+            }
         }
     }
 }
